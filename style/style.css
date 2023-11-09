@@ -1,8 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+*, html, body{
+    padding: 0px;
+    margin: 0px;
+}
+
+header nav span{
+    display: grid;
+}
+
+nav{
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #024959;
+}
+
+nav img{
+    max-width: 80px;
+}
+
+nav ul{
+    float: right;
+    padding-right: 5%;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline;
+    padding: .5em;
+}
+
+nav ul li a{
+    color: #000;
+    text-decoration: none;
+    font-family: 'Poppins';
+}
 
 .hero{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* testing grid display */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    display: flex;
 }
 
 .hero h1{
@@ -15,4 +56,22 @@
     -webkit-text-stroke: 2px #000;
     color: transparent;
     transition: 0.2s ease-in;
+}
+
+.mainPic{
+    background-image: url(../images/noBG.png);
+    width: 20%;
+}
+
+@media screen and (max-width: 600px){
+    nav img{
+        max-width: 60px;
+    }
+    .hero{
+        flex-direction: column;
+    }
+    .hero h1{
+        margin-right: 0em;
+        font-size: 40px;
+    }
 }
