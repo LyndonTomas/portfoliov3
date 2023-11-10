@@ -1,35 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Rubik&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+:root{
+    --darkBlue: #012e40;
+    --darkBlueGreen: #024959;
+    --BlueGreen: #026773;
+    --LightBlueGreen: #3CA6a6;
+    --LightGrey: #F2e3d5; 
+}
 
 *, html, body{
     padding: 0px;
     margin: 0px;
 }
 
-header nav span{
-    display: grid;
+body{
+    background: linear-gradient(to bottom, var(--darkBlue), var(--LightGrey));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-nav{
-    padding-left: 3%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    background-color: #024959;
+header nav{
+    /* display: grid; */
+    width: 100%;
+    /* background-color: aliceblue; */
+    height: 80px;
+    vertical-align: middle;
 }
 
 nav img{
     max-width: 80px;
+    position: fixed;
+    padding-left: 5%;
+    padding-top: 1%;
 }
 
 nav ul{
+    /* display: flex;
+    flex-direction: row-reverse; */
     float: right;
     padding-right: 5%;
+    padding-top: 1.5%;
 }
 
 nav ul li{
     list-style: none;
-    display: inline;
+    display: inline-block;
     padding: .5em;
 }
 
@@ -39,36 +55,54 @@ nav ul li a{
     font-family: 'Poppins';
 }
 
+nav ul li a:hover{
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+/* to be used in other nav's pages */
+.navActive{
+    color: #fff;
+}
+
 .hero{
     /* testing grid display */
     /* display: grid;
     grid-template-columns: 1fr 1fr; */
-    display: flex;
+    /* background-color: var(--LightBlueGreen); */
+    padding-left: 5%;
 }
 
 .hero h1{
     font-family: 'Oswald';
     font-size: 90px;
-    margin-right: .1em;
+    /* margin-right: .1em; */
+    color: #fff;
 }
 
 .hero h1:hover{
-    -webkit-text-stroke: 2px #000;
+    -webkit-text-stroke: 2px #fff;
     color: transparent;
     transition: 0.2s ease-in;
 }
 
-.mainPic{
-    background-image: url(../images/noBG.png);
-    width: 20%;
+#homePic{
+    position: absolute;
+    right: 0;
+    /* bottom: 0; */
+    z-index: -1;
 }
 
-@media screen and (max-width: 600px){
+/* responsive */
+/* tablet */
+@media screen and (max-width: 768px){
     nav img{
         max-width: 60px;
     }
     .hero{
         flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
     }
     .hero h1{
         margin-right: 0em;
