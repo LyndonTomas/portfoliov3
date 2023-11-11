@@ -30,7 +30,8 @@ header nav{
 
 nav img{
     max-width: 80px;
-    position: fixed;
+    /* position: fixed; */
+    position: static;
     padding-left: 5%;
     padding-top: 1%;
 }
@@ -50,13 +51,15 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #000;
+    color: #fff;
     text-decoration: none;
     font-family: 'Poppins';
 }
 
 nav ul li a:hover{
-    color: #fff;
+    font-weight: 800;
+    margin-left: 10px;
+    margin-right: 10px;
     transition: 0.2s ease-in-out;
 }
 
@@ -70,7 +73,9 @@ nav ul li a:hover{
     /* display: grid;
     grid-template-columns: 1fr 1fr; */
     /* background-color: var(--LightBlueGreen); */
+    margin-top: 3em;
     padding-left: 5%;
+    height: 80vh;
 }
 
 .hero h1{
@@ -92,6 +97,33 @@ nav ul li a:hover{
     /* bottom: 0; */
     z-index: -1;
 }
+
+footer{
+    color: var(--LightGrey);
+    font-family: 'Poppins';
+    background-color: var(--darkBlue);
+    width: 100%;
+    padding: 5%;
+}
+
+footer .copy{
+    text-align: center;
+}
+
+footer img{
+    width: 30px;
+    filter: invert(100%);
+}
+
+footer img:hover{
+    width: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+.icons a{
+    color: var(--darkBlue);
+}
+
 
 /* responsive */
 /* tablet */
