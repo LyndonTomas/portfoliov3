@@ -18,7 +18,8 @@
     width: 50px;
     filter: invert(100%);
     float: right;
-    margin-right: 40px;
+    margin-top: 20px;
+    margin-right: 10px;
     cursor: pointer;
     display: none;
 }
@@ -47,6 +48,7 @@ nav img{
     position: static;
     padding-left: 5%;
     padding-top: 1%;
+    margin-top: 10px;
 }
 
 nav ul{
@@ -159,6 +161,7 @@ footer img:hover{
         top: 80px;
         left: 0;
         text-align: center;
+        transition: 0.3s ease-in-out;
     }
     nav ul li{
         display: block;
@@ -166,6 +169,7 @@ footer img:hover{
     #check:checked ~ ul{
         /* left: 0; */
         display: none;
+        transition: 0.3s ease-in-out;
     }
     .hero{
         flex-direction: column;
