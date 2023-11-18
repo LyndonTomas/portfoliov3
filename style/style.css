@@ -57,6 +57,7 @@ nav ul{
     float: right;
     padding-right: 5%;
     padding-top: 1.5%;
+    z-index: 1;
 }
 
 nav ul li{
@@ -77,6 +78,11 @@ nav ul li a:hover{
     margin-right: 10px;
     transition: 0.2s ease-in-out;
 }
+
+.active{
+    font-weight: 800;
+}
+
 
 /* to be used in other nav's pages */
 .navActive{
@@ -121,6 +127,10 @@ footer{
     padding: 5%;
 }
 
+footer .icons{
+    float: right;
+}
+
 footer .copy{
     text-align: center;
 }
@@ -137,6 +147,31 @@ footer img:hover{
 
 .icons a{
     color: var(--darkBlue);
+}
+
+.blogContainer{
+    background-color: #F2e3d5;
+    opacity: 60%;
+    height: 190vh;
+    margin: 8%;
+    border-radius: 30px;
+    font-family: 'Poppins', 'Courier New', Courier, monospace;
+}
+
+.blogContainer .Date{
+    padding-top: 3em;
+    padding-right: 6em;
+    float: right;
+}
+
+.blogContainer .Title{
+    padding-top: 1.5em;
+    text-align: center;
+}
+
+.blogContent{
+    position: inherit;
+    padding: 50px;
 }
 
 
@@ -179,5 +214,9 @@ footer img:hover{
     .hero h1{
         margin-right: 0em;
         font-size: 40px;
+    }
+
+    .blogContainer{
+        height: 430vh;
     }
 }
