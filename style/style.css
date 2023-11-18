@@ -152,10 +152,11 @@ footer img:hover{
 .blogContainer{
     background-color: #F2e3d5;
     opacity: 60%;
-    height: 190vh;
-    margin: 8%;
+    /* height: 190vh; */
+    margin: 12%;
     border-radius: 30px;
     font-family: 'Poppins', 'Courier New', Courier, monospace;
+    box-sizing: content-box;
 }
 
 .blogContainer .Date{
@@ -205,6 +206,7 @@ footer img:hover{
         /* left: 0; */
         display: none;
         transition: 0.3s ease-in-out;
+        z-index: 2;
     }
     .hero{
         flex-direction: column;
@@ -215,8 +217,10 @@ footer img:hover{
         margin-right: 0em;
         font-size: 40px;
     }
+}
 
-    .blogContainer{
-        height: 430vh;
+@media screen and (max-width: 400px){
+    .blogContainer .Date{
+        padding-right: 1em;
     }
 }
