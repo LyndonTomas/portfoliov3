@@ -125,6 +125,7 @@ footer{
     background-color: var(--darkBlue);
     width: 100%;
     padding: 5%;
+    margin-top: auto;
 }
 
 footer .icons{
@@ -153,7 +154,7 @@ footer img:hover{
     background-color: #F2e3d5;
     opacity: 60%;
     /* height: 190vh; */
-    margin: 12%;
+    margin: 6%;
     border-radius: 30px;
     font-family: 'Poppins', 'Courier New', Courier, monospace;
     box-sizing: content-box;
@@ -218,6 +219,9 @@ footer img:hover{
         font-size: 40px;
     }
 }
+
+/* responsive */
+/* smartphone */
 
 @media screen and (max-width: 400px){
     .blogContainer .Date{
