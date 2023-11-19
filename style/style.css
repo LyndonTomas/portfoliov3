@@ -74,8 +74,8 @@ nav ul li a{
 
 nav ul li a:hover{
     font-weight: 800;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     transition: 0.2s ease-in-out;
 }
 
@@ -124,25 +124,31 @@ footer{
     font-family: 'Poppins';
     background-color: var(--darkBlue);
     width: 100%;
-    padding: 5%;
     margin-top: auto;
+    box-sizing: border-box; 
 }
 
 footer .icons{
-    float: right;
+    padding-top: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 1.2%;
 }
 
 footer .copy{
     text-align: center;
+    padding: 1em;
 }
 
 footer img{
-    width: 30px;
+    width: 25px;
     filter: invert(100%);
+    padding-right: .5em;
 }
 
 footer img:hover{
-    width: 40px;
+    width: 30px;
     transition: 0.3s ease-in-out;
 }
 
