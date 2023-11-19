@@ -89,6 +89,7 @@ nav ul li a:hover{
     color: #fff;
 }
 
+
 .hero{
     /* testing grid display */
     /* display: grid;
@@ -125,7 +126,7 @@ footer{
     background-color: var(--darkBlue);
     width: 100%;
     margin-top: auto;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 footer .icons{
@@ -156,6 +157,64 @@ footer img:hover{
     color: var(--darkBlue);
 }
 
+.aboutContainer{
+    /* display: block; */
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+}
+
+.aboutCardContainer{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 6rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    font-family: 'Poppins', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.aboutSectioncontainer{
+    position: inherit;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+aboutSectioncontainer p{
+    margin: 1em;
+}
+
+.aboutMeUnderline{
+    position: absolute;
+    background-color: var(--LightGrey);
+    height: 4px;
+    width: 50px;
+    /* margin-inline: auto; */
+    margin-top: 1%;
+    /* margin-bottom: 10%; */
+    border-radius: 30px;
+}
+
+.aboutMeUnderline:hover{
+    width: 100px;
+    transition: 0.3 all ease-in-out;
+}
+
+#aboutMeTitle:hover{
+    color: var(--LightGrey);
+    transition: 0.3 all ease-in-out;
+    margin-bottom: 5px;
+}
+
 .blogContainer{
     background-color: #F2e3d5;
     opacity: 60%;
@@ -181,6 +240,8 @@ footer img:hover{
     position: inherit;
     padding: 50px;
 }
+
+
 
 
 /* responsive */
@@ -224,6 +285,12 @@ footer img:hover{
         margin-right: 0em;
         font-size: 40px;
     }
+    .aboutContainer{
+        flex-direction: column;
+    }
+    .aboutMeUnderline{
+        margin-bottom: 1%;
+    }
 }
 
 /* responsive */
@@ -236,5 +303,8 @@ footer img:hover{
     }
     blogContent{
         font-size: 10px;
+    }
+    .aboutMeUnderline{
+        margin-bottom: .1%;
     }
 }
