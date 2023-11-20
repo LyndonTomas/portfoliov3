@@ -165,22 +165,29 @@ footer img:hover{
     margin-bottom: 3rem;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
-    height: 40vh;
+    /* height: 40vh; */
 }
 
 .aboutCardContainer{
+    background-color: var(--LightGrey);
+    box-sizing: content-box;
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 6rem;
+    height: 50vh;
     align-items: center;
     justify-content: center;
     text-align: center;
     justify-items: center;
     font-family: 'Poppins', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.aboutCardContainer ul li{
+    list-style: none;
+    display: inline-block;
 }
 
 .aboutSectioncontainer{
@@ -194,23 +201,18 @@ aboutSectioncontainer p{
 }
 
 .aboutMeUnderline{
-    position: absolute;
-    background-color: var(--LightGrey);
-    height: 4px;
-    width: 50px;
-    /* margin-inline: auto; */
-    margin-top: 1%;
-    /* margin-bottom: 10%; */
-    border-radius: 30px;
+    width: 60%;
+    height: .2em;
+    background-color: #012e40;
 }
 
 .aboutMeUnderline:hover{
-    width: 100px;
+    width: 80%;
     transition: 0.3 all ease-in-out;
 }
 
 #aboutMeTitle:hover{
-    color: var(--LightGrey);
+    color: var(--LightBlueGreen);
     transition: 0.3 all ease-in-out;
     margin-bottom: 5px;
 }
@@ -287,6 +289,11 @@ aboutSectioncontainer p{
     }
     .aboutContainer{
         flex-direction: column;
+        width: 100%;
+    }
+
+    .aboutCardContainer{
+        width: 100%;
     }
     .aboutMeUnderline{
         margin-bottom: 1%;
@@ -296,7 +303,7 @@ aboutSectioncontainer p{
 /* responsive */
 /* smartphone */
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
     .blogContainer .Date{
         padding-right: .5em;
         font-size: 10px;
@@ -306,5 +313,15 @@ aboutSectioncontainer p{
     }
     .aboutMeUnderline{
         margin-bottom: .1%;
+    }
+    .aboutContainer{
+        flex-direction: column;
+        margin-bottom: 10px;
+        padding: 0px;
+    }
+    .aboutCardContainer{
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
     }
 }
