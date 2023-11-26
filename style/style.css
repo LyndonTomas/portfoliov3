@@ -509,10 +509,6 @@ aboutSectioncontainer p{
     }
 
     .containerAccomplishments{
-        height: 750vh;
+        margin-bottom: 450vh;
     }
-
-    /* .containerAccomplishments{
-        margin-bottom: 5em;
-    } */
 }
