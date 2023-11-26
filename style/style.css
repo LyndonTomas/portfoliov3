@@ -319,6 +319,7 @@ aboutSectioncontainer p{
     justify-content: center;
     margin-bottom: 1em;
     flex-wrap: wrap;
+    height: 70vh;
 }
 
 .card{
