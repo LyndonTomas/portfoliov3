@@ -319,7 +319,7 @@ aboutSectioncontainer p{
     justify-content: center;
     margin-bottom: 1em;
     flex-wrap: wrap;
-    height: 70vh;
+    height: 120vh;
 }
 
 .card{
@@ -508,4 +508,11 @@ aboutSectioncontainer p{
         margin-bottom: 3em;
     }
 
+    .containerAccomplishments{
+        height: 750vh;
+    }
+
+    /* .containerAccomplishments{
+        margin-bottom: 5em;
+    } */
 }
