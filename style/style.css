@@ -319,7 +319,7 @@ aboutSectioncontainer p{
     justify-content: center;
     margin-bottom: 1em;
     flex-wrap: wrap;
-    height: 120vh;
+    height: 180vh;
 }
 
 .card{
@@ -392,6 +392,19 @@ aboutSectioncontainer p{
 
 
 /* responsive */
+/*wide screen*/
+@media screen and (max-width: 1000px){
+    .containerAccomplishments{
+        height: 250vh;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .containerAccomplishments{
+        height: 350vh;
+    }
+}
+
 /* tablet */
 @media screen and (max-width: 768px){
     .checkbtn{
